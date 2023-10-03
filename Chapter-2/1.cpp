@@ -11,7 +11,7 @@ int main(){
 	//cout << "Enter the value in gallons: ";
 	//cin >> vGallons;
 	//cout << "Value in cubic feet: " << (vGallons/7.481) << endl;
-	cout<<"Enter your weight in kg: ";
+	cout<<"Enter your weight in kg : ";
 	cin>>weight;
 	cout << "Your weight in pounds is: " << (weight*2.20462)<<endl;
 	return 0;
