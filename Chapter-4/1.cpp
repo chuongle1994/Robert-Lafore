@@ -12,21 +12,19 @@ input a number for the other one. Then display both numbers.
 
 using namespace std;
 
-struct phone{
-	int areacode, exchange, number;
+struct student{
+	int student_id, age, grade;
 };
 
 int main(){
-	phone phone1, phone2;
+	student student1;
 
-	phone1.areacode = 212;
-	phone1.exchange = 767;
-	phone1.number = 8900;
+
 	
-	cout << "Enter your areacode, exchange, and number: ";
-	cin >> phone2.areacode >> phone2.exchange >> phone2.number;
-	
-	cout << "My number is (" << phone1.areacode << ") " << phone1.exchange << "-" << phone1.number << endl;
-	cout << "Your number is (" << phone2.areacode << ") " << phone2.exchange << "-" << phone2.number << endl;
+	cout << "Enter your student_id, age, grade: ";
+	cin >> student1.student_id >> student1.age >> student1.grade;
+	cout << "Your student_ID: " << student1.student_id;
+	cout << " \nYour age: " << student1.age;
+	cout << "\nYour grade: " << student1.grade << endl;
 	return 0;
 }
