@@ -18,14 +18,17 @@ class Int{
     private:
     int i;
     public:
+    //default constructor to initialize to 0
     Int(){
-        i = 0;
+       // i = 0;
     }
+    //constructor to initualize with an int value
     Int(int i1){
         i = i1;
     }
-    void add(Int i2, Int i3){
-        i = i2.i + i3.i;
+    void multiply(Int i2, Int i3){
+        //accessing the i member variable of the i2 and i3 object.
+        i = i2.i * i3.i;
     }
     void display(){
         cout << i << endl;
@@ -37,7 +40,7 @@ int main(){
     Int i2(7);
     Int i3;
 
-    i3.add(i1, i2);
+    i3.multiply(i1, i2);
     i3.display();
     return 0;
 }
