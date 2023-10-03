@@ -11,15 +11,13 @@ tion that gets a radius value from the user, calls circarea() , and displays the
 
 using namespace std;
 
-float circarea(float r){
+float circarea(double &r){
     const float PI =  3.14159F;
     return PI * r * r;
 }
 
 int main(){
-    double radius;
-    cout << "Enter radius of the circle: ";
-    cin >> radius;
+    double radius = 4.5;
     cout << "Area is " << circarea(radius) << endl;
     return 0;
 }
